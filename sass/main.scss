@@ -1,3 +1,15 @@
-@import "sass/base";
-@import "sass/layout";
-@import "sass/component";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Roboto:wght@300;400;700&display=swap");
+
+@import "components/search";
+@import "components/logo";
+
+@import "layouts/hero";
+@import "layouts/navigation";
+@import "layouts/footer";
+@import "layouts/header";
+
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/typogrpahy";
