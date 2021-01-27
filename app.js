@@ -7,3 +7,8 @@ window.addEventListener("scroll", () => {
     header.classList.remove("scrolled");
   }
 });
+
+
+$( function() {
+  $( "#datepicker" ).datepicker();
+} );

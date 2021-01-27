@@ -1,0 +1,42 @@
+.booking {
+  width: 80%;
+  height: 14rem;
+  background: linear-gradient(
+    to right,
+    $color-purple-light 91%,
+    $color-purple-darker 98%
+  );
+  position: absolute;
+  bottom: -4rem;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+  }
+
+  input {
+    background: $color-purple-light;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid $color-purple-line;
+  }
+
+  &__btn {
+    width: 10rem;
+    height: 100%;
+    background: $color-purple-light;
+    border: none;
+    outline: none;
+    .arrow {
+      width: 1.2rem;
+    }
+  }
+}

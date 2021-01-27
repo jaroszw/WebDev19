@@ -1,0 +1,24 @@
+.hero__title {
+  font-size: 8rem;
+  margin-left: 8rem;
+  font-family: $font-play;
+  color: #fff;
+}
+.section-title {
+  font-size: 6rem;
+  font-weight: 400;
+  font-family: $font-play;
+  color: $lisght-font-color;
+  text-align: center;
+  border: 2px solid red;
+}
+
+.section-desc {
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: $lisght-font-color;
+  font-family: $font-desc;
+  padding: 6rem;
+  text-align: center;
+  line-height: 1.6;
+}

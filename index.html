@@ -1,74 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-  </head>
-  <body>
-    
-<div class="main-wrapper">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    crossorigin="anonymous" />
 
 
-<!-- Header and navbar -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-<div class="header-container">
 
-  <div class="main-header">
-    <div class="logo-box">
-      <img src="../img/fly.png" alt="Fly Logo" class="logo">
+</head>
+
+<body>
+
+  <div class="main-wrapper">
+
+
+    <!-- Header and navbar -->
+
+    <div class="header-container">
+
+      <div class="main-header">
+        <div class="logo-box">
+          <img src="../img/fly.png" alt="Fly Logo" class="logo">
+        </div>
+        <div class="hamburger">
+          <input type="checkbox" class="menu-btn" id="menu-btn">
+          <label for="menu-btn" class="menu__icon"></label>
+          <span class="menu__icon-line"></span>
+        </div>
+        <nav class="navbar">
+          <ul class="navbar__list">
+            <li class="navbar__item"><a href="#offer" class="navbar__link">Flights</a></li>
+            <li class="navbar__item"><a href="" class="navbar__link">Hotels</a></li>
+            <li class="navbar__item"><a href="" class="navbar__link">Guides</a></li>
+            <li class="navbar__item"><a href="" class="navbar__link">Popular</a></li>
+          </ul>
+        </nav>
+        <div class="search">
+          <input type="text" class="search__input" placeholder="search">
+        </div>
+      </div>
     </div>
-    
 
-    <div class="hamburger">
-      <input type="checkbox" class="menu-btn" id="menu-btn">
-      <label for="menu-btn" class="menu__icon"></label>
-      <span class="menu__icon-line"></span>
+    <!-- Hero section -->
+    <main class="hero">
+      <h1 class="hero__title">
+        Fly with us
+      </h1>
+
+      <div class="booking">
+        <div class="booking__current">
+          <input type="text" class="destination" id='destination' placeholder="Current City">
+          <label for="destination"></label>
+        </div>
+        <div class="booking__destination">
+          <input type="text" class="destination" id='destination' placeholder="Current City">
+          <label for="destination"></label>
+        </div>
+        <div class="booking__date">
+          <img src="../img/callendarx2.png" alt="" class="icon callendar">
+          <input type="text" id="datepicker" class="date" placeholder="15/10/2015">
+        </div>
+
+        <div class="booking__date">
+          <img src="../img/callendarx2.png" alt="" class="icon callendar">
+          <input type="text" id="datepicker" class="date" placeholder="15/10/2015">
+        </div>
+
+        <div class=" booking__date">
+          <img src="../img/userx2.png" alt="" class="icon user">
+          <input type="number" id="quantity" name="quantity" min="1" max="5">
+        </div>
+
+        <button class="booking__btn">
+          <img src="../img/arrow-right.png" alt="" class="arrow">
+        </button>
+      </div>
+    </main>
+
+    <div class="section-container">
+      <div class="section-wrapper">
+
+        <section class="offer" id="offer">
+          <h2 class="section-title">
+            Find Cheep flights with us
+          </h2>
+          <p class='section-desc'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+          <div class="offer__icons">
+            <img src="../img/umbrela.png" alt="" class="offer__icon">
+            <img src="../img/ticket.png" alt="" class="offer__icon">
+            <img src="../img/dolar.png" alt="" class="offer__icon">
+          </div>
+        </section>
+      </div>
     </div>
 
-    <nav class="navbar">
-      <ul class="navbar__list">
-        <li class="navbar__item"><a href="" class="navbar__link">Flights</a></li>
-        <li class="navbar__item"><a href="" class="navbar__link">Hotels</a></li>
-        <li class="navbar__item"><a href="" class="navbar__link">Guides</a></li>
-        <li class="navbar__item"><a href="" class="navbar__link">Popular</a></li>
-      </ul>
-    </nav>
-
-    <div class="search">
-      <input type="text" class="search__input" placeholder="search">
+    <div class="break">
+      <img src="../img/break.png" alt="" class='break__image'>
     </div>
 
+    <div class="section-container">
+      <div class="section-wrapper">
+        <section class="customers">
+          <h2 class="section-title">
+            Popular Destiantions
+          </h2>
+          <p class='section-desc'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+
+        </section>
+      </div>
     </div>
+
+    <div class="break">
+      <img src="../img/break.png" alt="" class='break__image'>
+    </div>
+
+    <!-- 
+    <div class="section-container">
+      <div class="section-wrapper">
+
+        <section class="destinations">
+          <h2 class="section-title">
+            Hear our <br> customers' thoughts
+          </h2>
+          <p class='section-desc'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+        </section>
+
+      </div>
+    </div>
+ -->
+
+
+
+
+
+
+
   </div>
-</div>
-
-  <!-- Hero section -->
-  <section class="hero">
-    <h1 class="hero__title">
-      Fly with us
-    </h1>
-
-    <!-- <div class="booking">
-      <div class="booking__current"></div>
-      <div class="booking__destination"></div>
-      <div class="booking__date"></div>
-      <div class="booking__date"></div>
-      <div class="booking__number"></div>
-      <button class="booking__btn"></button>
-    </div> -->
-  </section>
 
 
 
+  <script src="app.js"></script>
+</body>
 
-
-</div>
-
-
-
-    <script src="app.js"></script>
-  </body>
 </html>

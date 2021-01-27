@@ -1,4 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Roboto:wght@300;400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+.main-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  background: url("../img/"); }
+
+.hero__title {
+  font-size: 8rem;
+  margin-left: 8rem;
+  font-family: "Playfair Display", sans-serif;
+  color: #fff; }
+
+.section-title {
+  font-size: 6rem;
+  font-weight: 400;
+  font-family: "Playfair Display", sans-serif;
+  color: #323232;
+  text-align: center;
+  border: 2px solid red; }
+
+.section-desc {
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: #323232;
+  font-family: "Open sans";
+  padding: 6rem;
+  text-align: center;
+  line-height: 1.6; }
+
+.section-container {
+  width: 100%;
+  max-width: 120rem;
+  min-height: 100vh;
+  padding: 12rem;
+  margin: 0 auto; }
+
+.section-wrapper {
+  padding: 10rem 0; }
+
 .search {
   height: 100%;
   display: flex;
@@ -18,19 +70,36 @@
     height: 4rem;
     width: 4rem; }
 
-.hero {
+.booking {
+  width: 80%;
+  height: 14rem;
+  background: linear-gradient(to right, #69157a 91%, #110314 98%);
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
+  bottom: -4rem;
+  padding-left: 2rem;
   display: flex;
-  align-items: center;
-  background: url("../img/bg.png") no-repeat center;
-  background-size: cover; }
-  .hero__title {
-    font-size: 8rem;
-    color: #fff; }
+  justify-content: space-between;
+  align-items: center; }
+  .booking .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem; }
+  .booking input {
+    background: #69157a;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #c8a2d1; }
+  .booking__btn {
+    width: 10rem;
+    height: 100%;
+    background: #69157a;
+    border: none;
+    outline: none; }
+    .booking__btn .arrow {
+      width: 1.2rem; }
 
 .navbar {
   height: 100%;
@@ -54,29 +123,49 @@
   height: 10rem;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.9);
-  z-index: 1; }
+  z-index: 1;
+  display: flex; }
   .header-container .main-header {
     width: 100%;
+    height: 100%;
     max-width: 140rem;
     margin: 0 auto;
-    height: 8rem;
     display: flex;
     justify-content: space-between; }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-html {
-  font-size: 62.5%; }
-
-body {
-  font-family: "Roboto", sans-serif; }
-
-.main-wrapper {
+.hero {
+  position: relative;
+  top: 0;
+  left: 0;
   width: 100%;
-  margin: 0 auto;
-  height: 100vh; }
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../img/bg.png") no-repeat center;
+  background-size: cover; }
+
+.offer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .offer__icons {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+  .offer__icon {
+    height: 10rem; }
+
+.destinations {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.customers {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
