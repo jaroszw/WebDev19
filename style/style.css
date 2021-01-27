@@ -13,7 +13,6 @@ body {
   font-family: "Roboto", sans-serif; }
 
 .main-wrapper {
-  width: 100%;
   margin: 0 auto;
   height: 100vh;
   background: url("../img/"); }
@@ -29,8 +28,7 @@ body {
   font-weight: 400;
   font-family: "Playfair Display", sans-serif;
   color: #323232;
-  text-align: center;
-  border: 2px solid red; }
+  text-align: center; }
 
 .section-desc {
   font-size: 2.4rem;
@@ -100,6 +98,22 @@ body {
     outline: none; }
     .booking__btn .arrow {
       width: 1.2rem; }
+
+.break {
+  width: 100%; }
+  .break .image {
+    width: 100vw; }
+
+.display {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .display__box {
+    width: 33%;
+    min-width: 300px;
+    flex-wrap: wrap; }
+  .display__image {
+    width: 100%; }
 
 .navbar {
   height: 100%;
