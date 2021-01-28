@@ -83,35 +83,33 @@ body {
   background: linear-gradient(to right, #69157a 91%, #110314 98%);
   position: absolute;
   bottom: -4rem;
-  padding-left: 2rem;
+  height: 12rem;
+  border-radius: 3px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border: 2px solid green; }
-  .booking__right, .booking__left {
-    border: 2px solid yellow;
-    display: flex; }
-  .booking .icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-right: 0.5rem; }
+  align-items: center; }
+  .booking__panel {
+    display: flex;
+    align-items: center; }
   .booking__input-box {
-    padding: 4rem 0;
-    background: #69157a;
-    font-size: 1.6rem;
-    color: #fff;
+    color: #fff; }
+  .booking input {
+    background-color: #69157a;
     outline: none;
     border: none;
-    border-bottom: 2px solid #c8a2d1;
-    border: 2px solid blue; }
+    padding: 1rem;
+    margin: 0 2rem;
+    color: #fff; }
+  .booking input:nth-of-type(1),
+  .booking input:nth-of-type(2) {
+    border-bottom: 2px solid #c8a2d1; }
   .booking__btn {
     flex: 1;
     width: 8rem;
     height: 100%;
-    padding: 4rem 0;
     background: #69157a;
-    outline: none;
-    border: none; }
+    border: none;
+    outline: none; }
     .booking__btn .arrow {
       width: 1.2rem; }
 

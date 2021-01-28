@@ -11,8 +11,11 @@
     crossorigin="anonymous" />
 
 
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
   <script src="app.js" defer></script>
 
 
@@ -24,7 +27,6 @@
 
 
     <!-- Header and navbar -->
-
     <div class="header-container">
 
       <div class="main-header">
@@ -65,34 +67,32 @@
       </h1>
 
       <div class="booking">
-        <div class="booking__left">
-          <div class="booking__input-box">
+
+        <div class="booking__panel">
+          <div class="booking__input=box">
             <input type="text" class="destination" id='destination' placeholder="Current City">
             <label for="destination"></label>
           </div>
-          <div class="booking__input-box">
+          <div class="booking__input">
             <input type="text" class="destination" id='destination' placeholder="Current City">
             <label for="destination"></label>
           </div>
         </div>
-        <div class="booking__right">
-          <div class="booking__input-box">
-            <img src="../img/callendarx2.png" alt="" class="icon callendar">
-            <input type="text" id="datepicker" class="date" placeholder="15/10/2015">
+
+         <div class="booking__panel">
+          <div class="booking__input">
+            <input type="text" name="birthday" value="10/24/1984"/>
           </div>
-          
-          <div class="booking__input-box">
-              <img src="../img/callendarx2.png" alt="" class="icon callendar">
-              <input type="text" id="datepicker" class="date" placeholder="15/10/2015">
+          <div class="booking__input">
+            <input type="text" name="birthday" value="10/24/1984" />
           </div>
-          
-          <div class=" booking__input-box">
-            <img src="../img/userx2.png" alt="" class="icon user">
-            <input type="number" id="quantity" name="quantity" min="1" max="5">
+          <div class=" booking__input">
+            <input type="number" id="quantity" name="quantity" min="1" max="5" value="0">
           </div>
         </div>
+
         <button class="booking__btn">
-          <img src="../img/arrow-right.png" alt="" class="arrow">
+          <img src="../img/arrow-right.png" alt="" class="arrow" >
         </button>
       </div>
     </main>
