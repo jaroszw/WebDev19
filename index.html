@@ -13,6 +13,7 @@
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="app.js" defer></script>
 
 
 </head>
@@ -30,11 +31,17 @@
         <div class="logo-box">
           <img src="../img/fly.png" alt="Fly Logo" class="logo">
         </div>
+
+        <!-- hamburget menu  -->
         <div class="hamburger">
           <input type="checkbox" class="menu-btn" id="menu-btn">
-          <label for="menu-btn" class="menu__icon"></label>
-          <span class="menu__icon-line"></span>
+          <label for="menu-btn" class="menu__icon">
+            <span class="menu__icon-line"></span>
+          </label>
         </div>
+          
+
+          
         <nav class="navbar">
           <ul class="navbar__list">
             <li class="navbar__item"><a href="#offer" class="navbar__link">Flights</a></li>
@@ -58,43 +65,41 @@
       </h1>
 
       <div class="booking">
-        <div class="booking__current">
-          <input type="text" class="destination" id='destination' placeholder="Current City">
-          <label for="destination"></label>
+        <div class="booking__left">
+          <div class="booking__input-box">
+            <input type="text" class="destination" id='destination' placeholder="Current City">
+            <label for="destination"></label>
+          </div>
+          <div class="booking__input-box">
+            <input type="text" class="destination" id='destination' placeholder="Current City">
+            <label for="destination"></label>
+          </div>
         </div>
-        <div class="booking__destination">
-          <input type="text" class="destination" id='destination' placeholder="Current City">
-          <label for="destination"></label>
+        <div class="booking__right">
+          <div class="booking__input-box">
+            <img src="../img/callendarx2.png" alt="" class="icon callendar">
+            <input type="text" id="datepicker" class="date" placeholder="15/10/2015">
+          </div>
+          
+          <div class="booking__input-box">
+              <img src="../img/callendarx2.png" alt="" class="icon callendar">
+              <input type="text" id="datepicker" class="date" placeholder="15/10/2015">
+          </div>
+          
+          <div class=" booking__input-box">
+            <img src="../img/userx2.png" alt="" class="icon user">
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+          </div>
         </div>
-        <div class="booking__date">
-          <img src="../img/callendarx2.png" alt="" class="icon callendar">
-          <input type="text" id="datepicker" class="date" placeholder="15/10/2015">
-        </div>
-
-        <div class="booking__date">
-          <img src="../img/callendarx2.png" alt="" class="icon callendar">
-          <input type="text" id="datepicker" class="date" placeholder="15/10/2015">
-        </div>
-
-        <div class=" booking__date">
-          <img src="../img/userx2.png" alt="" class="icon user">
-          <input type="number" id="quantity" name="quantity" min="1" max="5">
-        </div>
-
         <button class="booking__btn">
           <img src="../img/arrow-right.png" alt="" class="arrow">
         </button>
       </div>
     </main>
 
-
-
-
-
     <div class="section-container">
-      <div class="section-wrapper">
 
-        <section class="offer" id="offer">
+        <section class="section offer" id="offer">
           <h2 class="section-title">
             Find Cheep flights with us
           </h2>
@@ -112,7 +117,6 @@
             <img src="../img/dolar.png" alt="" class="offer__icon">
           </div>
         </section>
-      </div>
     </div>
 
     <div class="break">
@@ -120,8 +124,7 @@
     </div>
 
     <div class="section-container">
-      <div class="section-wrapper">
-        <section class="customers">
+        <section class="section customers">
           <h2 class="section-title">
             Popular Destiantions
           </h2>
@@ -134,8 +137,50 @@
             pariatur.
           </p>
 
+          <div class="display">
+            <div class="display__box">
+              <img src="../img/1.jpg" alt="" class="image">
+              <div class="image__bg"></div>
+              <div class="image__bg"></div>
+              <h2 class="display__title">New York</h2>
+            </div>
+            <div class="display__box">
+              <img src="../img/2.jpg" alt="" class="image">
+              <div class="image__bg"></div>
+              <div class="image__bg"></div>
+              <h2 class="display__title">Dubaj</h2>
+            </div>
+            <div class="display__box">
+              <img src="../img/3.jpg" alt="" class="image">
+              <div class="image__bg"></div>
+              <div class="image__bg"></div>
+              <h2 class="display__title">Paris</h2>
+            </div>
+            <div class="display__box">
+              <img src="../img/4.jpg" alt="" class="image">
+              <div class="image__bg"></div>
+              <div class="image__bg"></div>
+              <h2 class="display__title">London</h2>
+            </div>
+            <div class="display__box">
+              <img src="../img/5.jpg" alt="" class="image">
+              <div class="image__bg"></div>
+              <div class="image__bg"></div>
+              <h2 class="display__title">Amsterdam</h2>
+            </div>
+            <div class="display__box">
+              <img src="../img/6.jpg" alt="" class="image">
+              <div class="image__bg"></div>
+              <div class="image__bg"></div>
+              <h2 class="display__title">Rio de Janeiro</h2>
+            </div>
+
+            <div class="display__button">
+              <button class="btn">View More</button>
+            </div>
+          </div>
+
         </section>
-      </div>
     </div>
 
     <div class="break">
@@ -143,12 +188,16 @@
     </div>
 
     <div class="section-container">
-      <div class="section-wrapper">
 
-        <section class="destinations">
+        <section class="section destinations">
           <h2 class="section-title">
             Hear our <br> customers' thoughts
           </h2>
+
+          <div class="break-line">
+            <img src="../img/heart.png" alt="heart-icon" class="break-line__icon" >
+          </div>
+          
           <p class='section-desc'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore
@@ -158,35 +207,29 @@
             pariatur.
           </p>
 
-          <div class="display">
-            <div class="display__box">
-              <img src="../img/1.jpg" alt="" class="display__image">
-            </div>
-            <div class="display__box">
-              <img src="../img/2.jpg" alt="" class="display__image">
-            </div>
-            <div class="display__box">
-              <img src="../img/3.jpg" alt="" class="display__image">
-            </div>
-            <div class="display__box">
-              <img src="../img/4.jpg" alt="" class="display__image">
-            </div>
-            <div class="display__box">
-              <img src="../img/5.jpg" alt="" class="display__image">
-            </div>
-            <div class="display__box">
-              <img src="../img/6.jpg" alt="" class="display__image">
-            </div>
-          </div>
+        
+
+
+          
+         
+  
+        <h2 class="section-title section-title__light">
+         We had the experience of our life
+        </h2>
+
+        <div class="display__button">
+          <button class="btn">Get Started</button>
+        </div>
 
         </section>
-      </div>
     </div>
 
 
     <div class="break">
       <img src="../img/break.png" alt="" class="image">
     </div>
+
+
 
 
   </div>

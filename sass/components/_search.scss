@@ -2,7 +2,10 @@
   height: 100%;
   display: flex;
   align-items: center;
-  margin-right: 3rem;
+
+  @include respond(phone) {
+    margin-right: 10rem;
+  }
 
   &__input {
     padding: 0.5rem;

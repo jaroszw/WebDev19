@@ -1,0 +1,35 @@
+// $BREAKPOINTS
+// Phone		0 - 600px  Phone
+// tab-port		600 - 900px Tablet
+// tab-land		9600 - 1200 Landscape
+// 1200 - 1800 Normal CSS
+// big-desktop	1800 +      Big desktops
+
+// MEDIAQUERIES WITH MIXINS
+
+@mixin respond($breakpoint) {
+  // < 600px
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  // < 900px
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  // <1200px
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  // > 1800px
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

@@ -1,6 +1,4 @@
 .booking {
-  width: 80%;
-  height: 14rem;
   background: linear-gradient(
     to right,
     $color-purple-light 91%,
@@ -9,9 +7,20 @@
   position: absolute;
   bottom: -4rem;
   padding-left: 2rem;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 2px solid green;
+
+  &__right,
+  &__left {
+    border: 2px solid yellow;
+    display: flex;
+    // @include respond(tab-land) {
+    //   flex-direction: column;
+    // }
+  }
 
   .icon {
     width: 2.5rem;
@@ -19,22 +28,25 @@
     margin-right: 0.5rem;
   }
 
-  input {
+  &__input-box {
+    padding: 4rem 0;
     background: $color-purple-light;
-    padding: 0.5rem;
     font-size: 1.6rem;
     color: #fff;
     outline: none;
     border: none;
     border-bottom: 2px solid $color-purple-line;
+    border: 2px solid blue;
   }
 
   &__btn {
-    width: 10rem;
+    flex: 1;
+    width: 8rem;
     height: 100%;
+    padding: 4rem 0;
     background: $color-purple-light;
-    border: none;
     outline: none;
+    border: none;
     .arrow {
       width: 1.2rem;
     }
