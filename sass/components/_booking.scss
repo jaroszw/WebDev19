@@ -17,6 +17,7 @@
   @include respond(tab-land) {
     width: 100%;
     background: $color-purple-light;
+    border-radius: 0;
   }
 
   @include respond(phone) {
@@ -105,7 +106,6 @@
     outline: none;
     border-radius: 6px;
     cursor: pointer;
-    // border: 2px solid olive;
 
     .arrow {
       width: 1.2rem;

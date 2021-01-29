@@ -16,32 +16,45 @@
   align-items: center;
   justify-content: center;
 
-  background: url("../img/bg.png") no-repeat center;
+  background: url('../img/bg.png') no-repeat center;
   background-size: cover;
+
+  @include respond(tab-port) {
+    top: 30rem;
+  }
 }
 
 .offer {
   &__icons {
-    margin-top: 7rem;
+    margin: 7rem 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
-  }
 
-  &__icon {
-    height: 10rem;
+    .fas {
+      font-size: 12rem;
+      color: $color-purple-dark;
+    }
   }
 
   @include respond(tab-port) {
-    margin-top: 6rem;
+    margin-top: 30rem;
 
     &__icons {
       margin-top: 12rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .fas {
+        margin: 6rem 0;
+      }
     }
   }
 
   @include respond(phone) {
-    margin-top: 12rem;
+    margin-top: 42rem;
     margin-bottom: 6rem;
 
     &__icons {
@@ -62,7 +75,7 @@
 
     &::before,
     &::after {
-      content: "";
+      content: '';
       width: 35rem;
       height: 2px;
       background-color: $color-purple-light;

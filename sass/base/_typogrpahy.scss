@@ -1,8 +1,17 @@
 .hero__title {
   font-size: 8rem;
-  margin-left: 8rem;
   font-family: $font-play;
+  margin-left: 3rem;
   color: #fff;
+  width: 100%;
+
+  @include respond(tab-port) {
+    font-size: 6rem;
+  }
+
+  @include respond(phone) {
+    font-size: 5rem;
+  }
 }
 
 .section-title {
