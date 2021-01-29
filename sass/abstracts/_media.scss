@@ -1,0 +1,33 @@
+.menu-btn:checked ~ .navbar {
+  transform: translateX(0);
+
+  //   .navbar__list {
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: space-around;
+  //     padding-top: 20rem;
+  //   }
+
+  .navbar__item {
+    transform: translateX(0);
+  }
+  .navbar__link {
+    color: #fff;
+  }
+}
+
+.menu-btn:checked + .menu-icon {
+  .menu-icon__line {
+    background-color: #fff;
+    animation: openMid 0.8s forwards;
+
+    &::before {
+      background-color: #fff;
+      animation: openTop 0.8s forwards;
+    }
+    &::after {
+      background-color: #fff;
+      animation: openBtm 0.8s forwards;
+    }
+  }
+}
