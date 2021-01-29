@@ -22,21 +22,31 @@
 
 .offer {
   &__icons {
-    margin-top: 5rem;
+    margin-top: 7rem;
     width: 100%;
     display: flex;
     justify-content: space-around;
   }
+
   &__icon {
     height: 10rem;
   }
 
   @include respond(tab-port) {
     margin-top: 6rem;
+
+    &__icons {
+      margin-top: 12rem;
+    }
   }
 
   @include respond(phone) {
     margin-top: 12rem;
+    margin-bottom: 6rem;
+
+    &__icons {
+      margin-top: 12rem;
+    }
   }
 }
 

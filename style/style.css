@@ -79,9 +79,6 @@ html {
   font-size: 62.5%;
   margin: 0;
   padding: 0; }
-  @media (max-width: 75em) {
-    html {
-      font-size: 56.25%; } }
 
 body {
   font-family: "Roboto", sans-serif; }
@@ -101,6 +98,10 @@ body {
   .section-title__light {
     color: #9c9c9c; }
 
+.working-title {
+  margin: 2rem 0;
+  color: white; }
+
 .section-desc {
   font-size: 2.4rem;
   font-weight: 300;
@@ -111,10 +112,12 @@ body {
   line-height: 1.6; }
   @media (max-width: 56.25em) {
     .section-desc {
-      padding: 3rem; } }
+      padding: 3rem;
+      margin-top: 4rem; } }
   @media (max-width: 37.5em) {
     .section-desc {
-      padding: 1rem; } }
+      padding: 1rem;
+      margin-top: 4rem; } }
 
 .display__title {
   width: 100%;
@@ -130,14 +133,16 @@ body {
   width: 100%;
   max-width: 120rem;
   min-height: 100vh;
-  padding: 12rem;
+  padding-top: 12rem;
+  padding-bottom: 6rem;
   margin: 0 auto; }
   @media (max-width: 56.25em) {
     .section-container {
-      padding: 12rem 6rem; } }
+      padding: 12rem 3rem; } }
   @media (max-width: 37.5em) {
     .section-container {
-      padding: 12rem 3rem; } }
+      padding-bottom: 2rem;
+      padding-top: 10rem; } }
 
 .main-wrapper {
   margin: 0 auto;
@@ -216,7 +221,6 @@ body {
     color: #fff;
     margin: 0 1rem;
     padding: 1rem 0;
-    border-radius: 3px;
     background-color: #69157a; }
     .booking__input input.text::-webkit-input-placeholder {
       color: #c8a2d1;
@@ -306,6 +310,9 @@ body {
       transform: rotate(-12deg); }
     .display__box:hover :nth-child(3) {
       transform: rotate(-6deg); }
+    @media (max-width: 56.25em) {
+      .display__box {
+        margin: 2rem; } }
   .display__button {
     margin: 10rem 0;
     width: 100%;
@@ -378,7 +385,8 @@ body {
 
 .navbar {
   height: 100%;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-left: 3rem; }
   .navbar__list {
     height: 100%;
     display: flex;
@@ -432,7 +440,10 @@ body {
         align-items: center;
         justify-content: center;
         color: #fff;
-        font-size: 4rem; } }
+        font-size: 4rem;
+        transition: background-color 0.3s; }
+        .navbar__link:hover {
+          background-color: rgba(200, 162, 209, 0.3); } }
 
 .move {
   background-color: #fff; }
@@ -482,7 +493,7 @@ body {
   background-size: cover; }
 
 .offer__icons {
-  margin-top: 5rem;
+  margin-top: 7rem;
   width: 100%;
   display: flex;
   justify-content: space-around; }
@@ -492,11 +503,16 @@ body {
 
 @media (max-width: 56.25em) {
   .offer {
-    margin-top: 6rem; } }
+    margin-top: 6rem; }
+    .offer__icons {
+      margin-top: 12rem; } }
 
 @media (max-width: 37.5em) {
   .offer {
-    margin-top: 12rem; } }
+    margin-top: 12rem;
+    margin-bottom: 6rem; }
+    .offer__icons {
+      margin-top: 12rem; } }
 
 .destinations .break-line {
   width: 100%;

@@ -2,15 +2,17 @@
   width: 100%;
   max-width: 120rem;
   min-height: 100vh;
-  padding: 12rem;
+  padding-top: 12rem;
+  padding-bottom: 6rem;
   margin: 0 auto;
 
   @include respond(tab-port) {
-    padding: 12rem 6rem;
+    padding: 12rem 3rem;
   }
 
   @include respond(phone) {
-    padding: 12rem 3rem;
+    padding-bottom: 2rem;
+    padding-top: 10rem;
   }
 }
 

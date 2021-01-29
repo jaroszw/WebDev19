@@ -30,6 +30,7 @@
         height: 100%;
         z-index: -1;
       }
+
       &__bg:nth-child(2) {
         background-color: #ededed;
         border: 1px solid #e3e1e1;
@@ -47,6 +48,10 @@
     }
     &:hover :nth-child(3) {
       transform: rotate(-6deg);
+    }
+
+    @include respond(tab-port) {
+      margin: 2rem;
     }
   }
 

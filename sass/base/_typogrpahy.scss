@@ -17,6 +17,11 @@
   }
 }
 
+.working-title {
+  margin: 2rem 0;
+  color: white;
+}
+
 .section-desc {
   font-size: 2.4rem;
   font-weight: 300;
@@ -28,10 +33,12 @@
 
   @include respond(tab-port) {
     padding: 3rem;
+    margin-top: 4rem;
   }
 
   @include respond(phone) {
     padding: 1rem;
+    margin-top: 4rem;
   }
 }
 

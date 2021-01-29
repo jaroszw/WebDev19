@@ -1,6 +1,7 @@
 .navbar {
   height: 100%;
   margin-right: auto;
+  margin-left: 3rem;
 
   &__list {
     height: 100%;
@@ -72,6 +73,11 @@
       justify-content: center;
       color: #fff;
       font-size: 4rem;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: rgba($color-purple-line, 0.3);
+      }
     }
   }
 }
