@@ -4,4 +4,18 @@
   min-height: 100vh;
   padding: 12rem;
   margin: 0 auto;
+
+  @include respond(tab-port) {
+    padding: 12rem 6rem;
+  }
+
+  @include respond(phone) {
+    padding: 12rem 3rem;
+  }
+}
+
+.main-wrapper {
+  margin: 0 auto;
+  height: 100vh;
+  background: url("../img/");
 }

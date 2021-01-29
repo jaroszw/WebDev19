@@ -25,6 +25,14 @@
   padding: 6rem;
   text-align: center;
   line-height: 1.6;
+
+  @include respond(tab-port) {
+    padding: 3rem;
+  }
+
+  @include respond(phone) {
+    padding: 1rem;
+  }
 }
 
 .display__title {

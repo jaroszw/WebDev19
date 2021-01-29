@@ -19,12 +19,8 @@
     background: $color-purple-light;
   }
 
-  @include respond(tab-port) {
-    bottom: -20rem;
-    padding: 0;
-  }
-
   @include respond(phone) {
+    bottom: -15rem;
     padding-top: 3rem;
     flex-direction: column;
     justify-content: flex-start;

@@ -1,10 +1,13 @@
 const header = document.querySelector(".header-container");
+const line = document.querySelector(".menu-icon__line");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 10) {
     header.classList.add("scrolled");
+    line.classList.add("move");
   } else {
     header.classList.remove("scrolled");
+    line.classList.remove("move");
   }
 });
 

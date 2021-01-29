@@ -1,15 +1,21 @@
 .menu-btn:checked ~ .navbar {
   transform: translateX(0);
 
-  //   .navbar__list {
-  //     display: flex;
-  //     flex-direction: column;
-  //     justify-content: space-around;
-  //     padding-top: 20rem;
-  //   }
-
   .navbar__item {
     transform: translateX(0);
+
+    &:nth-child(1) {
+      transition: transform 0.3s 0.4s ease-in-out;
+    }
+    &:nth-child(2) {
+      transition: transform 0.3s 0.5s ease-in-out;
+    }
+    &:nth-child(3) {
+      transition: transform 0.3s 0.6s ease-in-out;
+    }
+    &:nth-child(4) {
+      transition: transform 0.3s 0.7s ease-in-out;
+    }
   }
   .navbar__link {
     color: #fff;
