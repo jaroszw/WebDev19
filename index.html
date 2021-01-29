@@ -66,35 +66,39 @@
         Fly with us
       </h1>
 
-      <div class="booking">
-
-        <div class="booking__panel">
-          <div class="booking__input=box">
-            <input type="text" class="destination" id='destination' placeholder="Current City">
-            <label for="destination"></label>
-          </div>
-          <div class="booking__input">
-            <input type="text" class="destination" id='destination' placeholder="Current City">
-            <label for="destination"></label>
-          </div>
+    <form action="" class="booking">
+    <div class="booking__panel">
+        <div class="booking__input">
+          <input type="text" id='destination' placeholder="Current City" class="text">
+          <label for="destination"></label>
         </div>
-
-         <div class="booking__panel">
-          <div class="booking__input">
-            <input type="text" name="birthday" value="10/24/1984"/>
-          </div>
-          <div class="booking__input">
-            <input type="text" name="birthday" value="10/24/1984" />
-          </div>
-          <div class=" booking__input">
-            <input type="number" id="quantity" name="quantity" min="1" max="5" value="0">
-          </div>
+        <div class="booking__input">
+          <input type="text" id='destination' placeholder="Destination City" class="text">
+          <label for="destination"></label>
         </div>
-
-        <button class="booking__btn">
-          <img src="../img/arrow-right.png" alt="" class="arrow" >
-        </button>
       </div>
+      
+      <div class="booking__panel">
+        <div class="booking__input booking__input-date">
+          <img src="../img/callendar.png" alt="" class="icon">
+          <input type="text" name="birthday" value="10/24/1984" class="date"/>
+        </div>
+        <div class="booking__input booking__input-date">
+          <img src="../img/callendar.png" alt="" class="icon">
+          <input type="text" name="birthday" value="10/24/1984" class="date"/>
+        </div>
+        
+      </div>
+      <div class="booking__panel">
+        <div class=" booking__input">
+          <input type="number" id="quantity" name="quantity" min="1" max="5" value="0" class="date">
+        </div>
+      </div>
+
+    <button class="booking__btn" type="submit">
+      <img src="../img/arrow-right.png" alt="" class="arrow" >
+    </button>
+  </form>
     </main>
 
     <div class="section-container">
