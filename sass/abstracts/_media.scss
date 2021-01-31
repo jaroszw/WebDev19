@@ -1,4 +1,4 @@
-.menu-btn:checked ~ .navbar {
+.menu-icon.open ~ .navbar {
   transform: translateX(0);
 
   .navbar__item {
@@ -22,7 +22,7 @@
   }
 }
 
-.menu-btn:checked + .menu-icon {
+.menu-icon.open {
   .menu-icon__line {
     background-color: #fff;
     animation: openMid 0.8s forwards;

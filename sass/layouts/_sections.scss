@@ -1,7 +1,7 @@
 .section {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -16,7 +16,8 @@
   align-items: center;
   justify-content: center;
 
-  background: url('../img/bg.png') no-repeat center;
+  background: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')
+    no-repeat center;
   background-size: cover;
 
   @include respond(tab-port) {
@@ -25,40 +26,16 @@
 }
 
 .offer {
-  &__icons {
-    margin: 7rem 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+  &__icon {
+    z-index: -1;
+    margin: 0 auto;
 
-    .fas {
-      font-size: 12rem;
-      color: $color-purple-dark;
+    @include respond(tab-port) {
+      border: 5px solid yellow;
     }
-  }
 
-  @include respond(tab-port) {
-    margin-top: 30rem;
-
-    &__icons {
-      margin-top: 12rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .fas {
-        margin: 6rem 0;
-      }
-    }
-  }
-
-  @include respond(phone) {
-    margin-top: 42rem;
-    margin-bottom: 6rem;
-
-    &__icons {
-      margin-top: 12rem;
+    @include respond(phone) {
+      border: 5px solid pink;
     }
   }
 }

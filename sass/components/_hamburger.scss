@@ -24,7 +24,7 @@
 
     &::before,
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       background-color: $color-purple-dark;
       width: 100%;

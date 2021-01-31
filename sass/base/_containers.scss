@@ -3,7 +3,7 @@
   max-width: 120rem;
   min-height: 100vh;
   padding-top: 12rem;
-  padding-bottom: 6rem;
+  // padding-bottom: 6rem;
   margin: 0 auto;
 
   @include respond(tab-port) {
@@ -19,5 +19,5 @@
 .main-wrapper {
   margin: 0 auto;
   height: 100vh;
-  background: url("../img/");
+  background: url('../img/');
 }

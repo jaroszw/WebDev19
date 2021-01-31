@@ -1,23 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Roboto:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Roboto:wght@300;400;700&display=swap');
 
-@import "abstracts/mixins";
-@import "abstracts/variables";
-@import "abstracts/media";
-@import "abstracts/animations";
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+@import 'abstracts/media';
+@import 'abstracts/animations';
 
-@import "base/base";
-@import "base/typogrpahy";
-@import "base/containers";
+@import 'base/base';
+@import 'base/typogrpahy';
+@import 'base/containers';
 
-@import "components/search";
-@import "components/logo";
-@import "components/booking";
-@import "components/break";
-@import "components/display";
-@import "components/button";
-@import "components/hamburger";
+@import 'components/testimonials';
+@import 'components/search';
+@import 'components/logo';
+@import 'components/booking';
+@import 'components/break';
+@import 'components/gallery';
+@import 'components/button';
+@import 'components/hamburger';
 
-@import "layouts/navigation";
-@import "layouts/header";
-@import "layouts/sections";
-@import "layouts/footer";
+@import 'layouts/navigation';
+@import 'layouts/header';
+@import 'layouts/sections';
+@import 'layouts/footer';

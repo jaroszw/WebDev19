@@ -1,15 +1,38 @@
-const header = document.querySelector(".header-container");
-const line = document.querySelector(".menu-icon__line");
+let topHeader = document.getElementById('header-container');
+const line = document.querySelector('.menu-icon__line');
+const title = document.getElementById('popular');
+const list = document.querySelector('.navbar__list');
+const links = list.querySelectorAll('li a');
+const menuBtn = document.querySelector('.menu-btn');
+const menuIcon = document.querySelector('.menu-icon');
 
-window.addEventListener("scroll", () => {
+window.addEventListener('scroll', () => {
   if (window.scrollY > 10) {
-    header.classList.add("scrolled");
-    line.classList.add("move");
+    topHeader.classList.add('scrolled');
+    line.classList.add('move');
   } else {
-    header.classList.remove("scrolled");
-    line.classList.remove("move");
+    topHeader.classList.remove('scrolled');
+    line.classList.remove('move');
   }
 });
+
+menuIcon.addEventListener('click', () => {
+  menuIcon.classList.toggle('open');
+});
+
+links.forEach((link) =>
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const elementID = this.getAttribute('id');
+    const selectedSection = document.getElementById(`${elementID}-sections`);
+    window.scrollTo({
+      top: `${selectedSection.offsetTop - topHeader.offsetHeight - 120}`,
+      left: 0,
+      behavior: 'smooth',
+    });
+    menuIcon.classList.remove('open');
+  })
+);
 
 $(function () {
   $('input[name="birthday"]').daterangepicker(
@@ -17,10 +40,10 @@ $(function () {
       singleDatePicker: true,
       showDropdowns: true,
       minYear: 2000,
-      maxYear: parseInt(moment().format("YYYY"), 10),
+      maxYear: parseInt(moment().format('YYYY'), 10),
     },
     function (start, end, label) {
-      var years = moment().diff(start, "years");
+      var years = moment().diff(start, 'years');
     }
   );
 });

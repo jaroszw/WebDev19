@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
     crossorigin="anonymous" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ -->
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
@@ -29,7 +29,7 @@
 
 
     <!-- Header and navbar -->
-    <div class="header-container">
+    <div class="header-container" id="header-container">
 
       <div class="main-header">
         <div class="logo-box">
@@ -39,20 +39,17 @@
 
         <!-- hamburget menu  -->
         <!-- <div class="hamburger"> -->
-        <input type="checkbox" class="menu-btn" id="menu-btn">
         <label for="menu-btn" class="menu-icon">
           <span class="menu-icon__line"></span>
         </label>
         <!-- </div> -->
 
-
-
         <nav class="navbar">
           <ul class="navbar__list">
-            <li class="navbar__item"><a href="#offer" class="navbar__link">Flights</a></li>
-            <li class="navbar__item"><a href="" class="navbar__link">Hotels</a></li>
-            <li class="navbar__item"><a href="" class="navbar__link">Guides</a></li>
-            <li class="navbar__item"><a href="" class="navbar__link">Popular</a></li>
+            <li class="navbar__item"><a href="" class="navbar__link" id='flights'>Flights</a></li>
+            <li class="navbar__item"><a href="" class="navbar__link" id='popular'>Popular</a></li>
+            <li class="navbar__item"><a href="javascript:;" class="navbar__link" id='testimonials'>Testimonials</a></li>
+            <li class="navbar__item"><a href="" class="navbar__link" id='contact'>Contact</a></li>
           </ul>
         </nav>
         <div class="search">
@@ -63,17 +60,18 @@
 
 
 
-    <!-- Hero section -->
+    <!-- HERO SECTION WITH BOOKING PANEL  -->
     <main class="hero">
       <h1 class="hero__title">
         Fly with us
       </h1>
 
-      <form action="" class="booking">
+
+      <form action="" class="booking" id="flights-sections">
         <div class="booking__panel">
           <div class="booking__input">
-            <input type="text" id='destination' placeholder="Current City" class="text">
-            <label for="destination"></label>
+            <input type="text" id='current' placeholder="Current City" class="text">
+            <label for="current"></label>
           </div>
           <div class="booking__input">
             <input type="text" id='destination' placeholder="Destination City" class="text">
@@ -104,9 +102,11 @@
       </form>
     </main>
 
+
+    <!-- CHEEP FLIGTHS SECTIONS -->
     <div class="section-container">
 
-      <section class="section offer" id="offer">
+      <section class="section offer">
         <h2 class="section-title">
           Find Cheep flights with us
         </h2>
@@ -118,11 +118,11 @@
           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur.
         </p>
-        <div class="offer__icons">
-          <i class="fas fa-cocktail"></i>
-          <i class="fas fa-ticket-alt"></i>
-          <i class="fas fa-money-bill-wave"></i>
-
+        <div>
+          <img src="../img/world.png" alt="" class="offer__icon">
+        </div>
+        <div class="gallery__button">
+          <button class="btn">Business Lounge</button>
         </div>
       </section>
     </div>
@@ -131,8 +131,10 @@
       <img src="../img/break.png" alt="" class="image">
     </div>
 
+
+    <!-- POPULAR SECTION -->
     <div class="section-container">
-      <section class="section customers">
+      <section class="section customers" id="popular-sections">
         <h2 class="section-title">
           Popular Destiantions
         </h2>
@@ -145,45 +147,57 @@
           pariatur.
         </p>
 
-        <div class="display">
-          <div class="display__box">
-            <img src="../img/1.jpg" alt="" class="image">
+        <div class=" gallery">
+          <div class="gallery__box">
+            <img
+              src="https://images.unsplash.com/photo-1541214356144-6098f33b876a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1968&q=80"
+              alt="" class="image">
             <div class="image__bg"></div>
             <div class="image__bg"></div>
-            <h2 class="display__title">New York</h2>
+            <h2 class="gallery__title">New York</h2>
           </div>
-          <div class="display__box">
-            <img src="../img/2.jpg" alt="" class="image">
+          <div class="gallery__box">
+            <img
+              src="https://images.unsplash.com/photo-1583499882110-688e720b025e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=820&q=80"
+              alt="" class="image">
             <div class="image__bg"></div>
             <div class="image__bg"></div>
-            <h2 class="display__title">Dubaj</h2>
+            <h2 class="gallery__title">Dubaj</h2>
           </div>
-          <div class="display__box">
-            <img src="../img/3.jpg" alt="" class="image">
+          <div class="gallery__box">
+            <img
+              src="https://images.unsplash.com/photo-1517350705438-3a7e87343117?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="" class="image">
             <div class="image__bg"></div>
             <div class="image__bg"></div>
-            <h2 class="display__title">Paris</h2>
+            <h2 class="gallery__title">Paris</h2>
           </div>
-          <div class="display__box">
-            <img src="../img/4.jpg" alt="" class="image">
+          <div class="gallery__box">
+            <img
+              src="https://images.unsplash.com/photo-1527259047647-731b8be6fd42?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="" class="image">
             <div class="image__bg"></div>
             <div class="image__bg"></div>
-            <h2 class="display__title">London</h2>
+            <h2 class="gallery__title">London</h2>
           </div>
-          <div class="display__box">
-            <img src="../img/5.jpg" alt="" class="image">
+          <div class="gallery__box">
+            <img
+              src="https://images.unsplash.com/photo-1596304601957-e0b3aca66ce4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="" class="image">
             <div class="image__bg"></div>
             <div class="image__bg"></div>
-            <h2 class="display__title">Amsterdam</h2>
+            <h2 class="gallery__title">Amsterdam</h2>
           </div>
-          <div class="display__box">
-            <img src="../img/6.jpg" alt="" class="image">
+          <div class="gallery__box">
+            <img
+              src="https://images.unsplash.com/photo-1572107433787-4256ceba42c9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="" class="image">
             <div class="image__bg"></div>
             <div class="image__bg"></div>
-            <h2 class="display__title">Rio de Janeiro</h2>
+            <h2 class="gallery__title">Berlin</h2>
           </div>
 
-          <div class="display__button">
+          <div class="gallery__button">
             <button class="btn">View More</button>
           </div>
         </div>
@@ -195,9 +209,12 @@
       <img src="../img/break.png" alt="" class="image">
     </div>
 
+
+    <!-- TESTIMONIALS SECTION -->
     <div class="section-container">
 
-      <section class="section destinations">
+
+      <section class="section destinations" id="testimonials-sections">
         <h2 class="section-title">
           Hear our <br> customers' thoughts
         </h2>
@@ -206,32 +223,99 @@
           <img src="../img/heart.png" alt="heart-icon" class="break-line__icon">
         </div>
 
-        <p class='section-desc'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
-        </p>
+        <div class="section-testimonials">
+          <div class="slider">
+            <div class="slider__slides">
+              <div class="slider__slide slider__slide--1">
+                <figure class="testimonial slider__slide-content">
+                  <blockquote class="testimonial__text">
+                    <img class="testimonial__quotation-marks" src="img/images/pattern-quotes.svg" alt="quotation marks">
+                    <p class="testimonial__quote">
+                      “ I’ve been interested in coding for a while but never taken the jump, until now.
+                      I couldn’t recommend this course enough. I’m now in the job of my dreams and so
+                      excited about the future. ”
+                    </p>
+                    <cite class="testimonial__cite">
+                      <span class="testimonial__cite--name">Tanya Sinclair </span>
+                      <span class="testimonial__cite--role">UX Engineer</span>
+                    </cite>
+                  </blockquote>
+                  <div class="testimonial__img">
+                    <img class="testimonial__photo"
+                      src="https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                      alt="Tanya Sinclair">
+                  </div>
+                </figure>
+              </div>
 
+              <div class="slider__slide slider__slide--2">
+                <figure class="testimonial slider__slide-content">
+                  <blockquote class="testimonial__text">
+                    <img class="testimonial__quotation-marks" src="img/images/pattern-quotes.svg" alt="quotation marks">
+                    <p class="testimonial__quote">
+                      “ I’ve been interested in coding for a while but never taken the jump, until now.
+                      I couldn’t recommend this course enough. I’m now in the job of my dreams and so
+                      excited about the future. ”
+                    </p>
+                    <cite class="testimonial__cite">
+                      <span class="testimonial__cite--name">Tanya Sinclair </span>
+                      <span class="testimonial__cite--role">UX Engineer</span>
+                    </cite>
+                  </blockquote>
+                  <div class="testimonial__img">
+                    <img class="testimonial__photo"
+                      src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                      alt="Tanya Sinclair">
+                  </div>
+                </figure>
+              </div>
 
+              <div class="slider__slide slider__slide--3">
+                <figure class="testimonial slider__slide-content">
+                  <blockquote class="testimonial__text">
+                    <img class="testimonial__quotation-marks" src="img/images/pattern-quotes.svg" alt="quotation marks">
+                    <p class="testimonial__quote">
+                      “ If you want to lay the best foundation possible I’d recommend taking this course.
+                      The depth the instructors go into is incredible. I now feel so confident about
+                      starting up as a professional developer. ”
+                    </p>
+                    <cite class="testimonial__cite">
+                      <span class="testimonial__cite--name">John Tarkpor </span>
+                      <span class="testimonial__cite--role">Junior Front-end Developer</span>
+                    </cite>
+                  </blockquote>
+                  <div class="testimonial__img">
+                    <img class="testimonial__photo"
+                      src="https://images.unsplash.com/photo-1586287011575-a23134f797f9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                      alt="John Tarkpor">
+                  </div>
+                </figure>
+              </div>
+            </div>
 
-
-
-
-
+            <div class="slider__buttons">
+              <div class="slider__button slider__button--prev">
+                <svg class="slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+                  <path fill="none" stroke-width="3" d="M11 1L3 9l8 8" />
+                </svg>
+              </div>
+              <div class="slider__button slider__button--next">
+                <svg class="slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="18">
+                  <path fill="none" stroke-width="3" d="M2 1l8 8-8 8" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
         <h2 class="section-title section-title__light">
           We had the experience of our life
         </h2>
 
-        <div class="display__button">
+        <!-- <div class="display__button">
           <button class="btn">Get Started</button>
-        </div>
-
+        </div> -->
       </section>
     </div>
-
 
     <div class="break">
       <img src="../img/break.png" alt="" class="image">
@@ -241,10 +325,7 @@
 
 
   </div>
-
-
-
-  <script src="app.js"></script>
+  <script src="slider.js"></script>
 </body>
 
 </html>
