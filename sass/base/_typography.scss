@@ -1,0 +1,64 @@
+.hero__title {
+  font-size: 8rem;
+  font-family: $font-play;
+  margin-left: 3rem;
+  color: #fff;
+  width: 100%;
+
+  @include respond(tab-port) {
+    font-size: 6rem;
+  }
+
+  @include respond(phone) {
+    font-size: 5rem;
+  }
+}
+
+.section-title {
+  font-size: 6rem;
+  font-weight: 400;
+  font-family: $font-play;
+  color: $color-grey-light;
+  text-align: center;
+
+  &__light {
+    color: $color-grey-lighter;
+    margin: 5rem 0;
+  }
+}
+
+.working-title {
+  margin: 2rem 0;
+  color: white;
+}
+
+.section-desc {
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: $color-grey-light;
+  font-family: $font-desc;
+  padding: 6rem;
+  text-align: center;
+  line-height: 1.6;
+
+  @include respond(tab-port) {
+    padding: 3rem;
+    margin-top: 4rem;
+  }
+
+  @include respond(phone) {
+    padding: 1rem;
+    margin-top: 4rem;
+  }
+}
+
+.gallery__title {
+  width: 100%;
+  padding: 2rem;
+  text-transform: uppercase;
+  font-family: $font-roboto;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: $color-grey-light;
+  text-align: center;
+}

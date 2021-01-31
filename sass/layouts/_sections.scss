@@ -20,23 +20,19 @@
     no-repeat center;
   background-size: cover;
 
-  @include respond(tab-port) {
-    top: 30rem;
-  }
+  // @include respond(tab-port) {
+  //   top: 20rem;
+  // }
 }
 
 .offer {
+  @include respond(phone) {
+    margin-top: 15rem;
+  }
+
   &__icon {
-    z-index: -1;
-    margin: 0 auto;
-
-    @include respond(tab-port) {
-      border: 5px solid yellow;
-    }
-
-    @include respond(phone) {
-      border: 5px solid pink;
-    }
+    width: 100%;
+    height: 100%;
   }
 }
 

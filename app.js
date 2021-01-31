@@ -26,7 +26,7 @@ links.forEach((link) =>
     const elementID = this.getAttribute('id');
     const selectedSection = document.getElementById(`${elementID}-sections`);
     window.scrollTo({
-      top: `${selectedSection.offsetTop - topHeader.offsetHeight - 120}`,
+      top: `${selectedSection.offsetTop - topHeader.offsetHeight - 100}`,
       left: 0,
       behavior: 'smooth',
     });

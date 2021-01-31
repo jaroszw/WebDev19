@@ -13,15 +13,38 @@
   &__item {
     margin: 0 3rem;
     list-style: none;
-    width: 100%;
-    flex: 1;
   }
 
   &__link {
+    padding: 0.5rem;
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: 400;
     color: $color-purple-light;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: -1.5rem;
+      height: 8px;
+      width: 0;
+      background: $color-purple-dark;
+      z-index: 100;
+      transition: width 0.3s cubic-bezier(0.32, 0.24, 0.44, 1.64);
+    }
+
+    &:hover::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: -1.5rem;
+      height: 8px;
+      width: 100%;
+      background: $color-purple-dark;
+      z-index: 100;
+    }
   }
 
   @include respond(tab-port) {
