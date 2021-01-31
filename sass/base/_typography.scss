@@ -28,8 +28,9 @@
 }
 
 .working-title {
-  margin: 2rem 0;
+  margin: 0 auto;
   color: white;
+  font-size: 4rem;
 }
 
 .section-desc {
@@ -61,4 +62,9 @@
   font-size: 1.6rem;
   color: $color-grey-light;
   text-align: center;
+}
+
+a {
+  text-transform: uppercase;
+  font-size: 1.4rem;
 }
