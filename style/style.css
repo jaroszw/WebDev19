@@ -173,6 +173,10 @@ a {
   text-transform: uppercase;
   font-size: 1.4rem; }
 
+.contact__title {
+  font-size: 1.5rem;
+  color: #fff; }
+
 .section-container {
   width: 100%;
   max-width: 120rem;
@@ -811,11 +815,21 @@ a {
     margin: 2rem 2rem; }
 
 .contact-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   width: 100%;
   margin-top: -3px;
   background: url("https://images.unsplash.com/photo-1545158828-4e222fdb1d5a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80") no-repeat center;
-  background-size: cover; }
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contact-container .background {
+    width: 80rem;
+    height: 50rem;
+    filter: blur(4px);
+    position: absolute;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4); }
+  .contact-container h2 {
+    font-weight: 400;
+    font-size: 18px; }
