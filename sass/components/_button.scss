@@ -21,5 +21,9 @@
   &.contact {
     background-color: $color-purple-dark;
     color: $color-purple-line;
+
+    &:hover {
+      color: #fff;
+    }
   }
 }
