@@ -17,4 +17,9 @@
   &:active {
     color: #fff;
   }
+
+  &.contact {
+    background-color: $color-purple-dark;
+    color: $color-purple-line;
+  }
 }

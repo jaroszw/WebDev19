@@ -169,10 +169,6 @@ body {
   color: #323232;
   text-align: center; }
 
-a {
-  text-transform: uppercase;
-  font-size: 1.4rem; }
-
 .contact__title {
   font-size: 1.5rem;
   color: #fff; }
@@ -606,6 +602,9 @@ a {
     color: #c8a2d1; }
   .btn:active {
     color: #fff; }
+  .btn.contact {
+    background-color: #500e5e;
+    color: #c8a2d1; }
 
 .menu-btn {
   display: none; }
@@ -655,6 +654,76 @@ a {
           animation: closeBtm 0.8s;
           animation-direction: reverse; } }
 
+.no-support {
+  text-align: center;
+  padding: 10px;
+  width: 300px;
+  position: absolute;
+  z-index: 100;
+  top: 5px;
+  left: 5px;
+  background: #ee6620;
+  color: #fff;
+  font-size: 12px; }
+
+@supports (backdrop-filter: opacity(1)) {
+  .no-support {
+    display: none; } }
+
+.form {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  min-width: 400px;
+  line-height: 1;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(3px);
+  padding: 2rem;
+  position: relative;
+  min-width: 60rem; }
+  .form__header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    position: absolute;
+    top: -8rem; }
+    .form__header .title {
+      font-size: 3rem;
+      color: #fff;
+      margin: 3rem; }
+    .form__header .img {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 100%;
+      border: 3px solid #fff; }
+  .form__input-box {
+    display: flex;
+    justify-content: space-between; }
+  .form__text-box {
+    display: flex; }
+  .form__input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1px;
+    width: 49%;
+    padding: 1rem;
+    outline: none;
+    color: #fff; }
+    .form__input::before {
+      content: "";
+      border-bottom: 3px solid #c8a2d1;
+      width: 100%; }
+  .form__text {
+    margin-top: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1px;
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    color: #fff; }
+  .form__label {
+    position: absolute; }
+
 .navbar {
   height: 100%;
   margin-right: auto;
@@ -670,23 +739,23 @@ a {
   .navbar__link {
     padding: 0.5rem;
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: #69157a;
     position: relative; }
     .navbar__link::before {
       position: absolute;
-      content: '';
+      content: "";
       left: 0;
       bottom: -1.5rem;
       height: 8px;
       width: 0;
       background: #500e5e;
       z-index: 100;
-      transition: width 0.3s cubic-bezier(0.32, 0.24, 0.44, 1.64); }
+      transition: width 0.2s cubic-bezier(0.32, 0.24, 0.44, 1.64); }
     .navbar__link:hover::before {
       position: absolute;
-      content: '';
+      content: "";
       left: 0;
       bottom: -1.5rem;
       height: 8px;
@@ -716,7 +785,9 @@ a {
         justify-content: space-around;
         padding-top: 20rem; }
       .navbar__item {
-        transform: translateX(100%); }
+        transform: translateX(150%);
+        width: 100%;
+        height: 100%; }
         .navbar__item:nth-child(1) {
           transition: transform 0.4s 0s cubic-bezier(0.06, 0.91, 0.76, 1.03); }
         .navbar__item:nth-child(2) {
@@ -735,7 +806,9 @@ a {
         font-size: 4rem;
         transition: background-color 0.3s; }
         .navbar__link:hover {
-          background-color: rgba(200, 162, 209, 0.3); } }
+          background-color: rgba(200, 162, 209, 0.3); }
+          .navbar__link:hover::before {
+            display: none; } }
 
 .move {
   background-color: #fff; }
@@ -802,7 +875,7 @@ a {
   justify-content: center;
   align-items: center; }
   .destinations .break-line::before, .destinations .break-line::after {
-    content: '';
+    content: "";
     width: 35rem;
     height: 2px;
     background-color: #69157a; }
@@ -826,10 +899,7 @@ a {
   .contact-container .background {
     width: 80rem;
     height: 50rem;
-    filter: blur(4px);
-    position: absolute;
-    backdrop-filter: blur(10px);
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4); }
+    position: absolute; }
   .contact-container h2 {
     font-weight: 400;
     font-size: 18px; }
